@@ -1,0 +1,14 @@
+footer{ padding: 40px 40px 20px 20px; height: 250px; }
+footer > div{ display: flex; justify-content: space-between; margin-top: 15px; }
+footer .infoText{ width: 50%; }
+footer p{ color: #fff; font-size: 14px; margin-bottom: 20px; line-height: 20px; }
+footer :is(span, a){ text-decoration: none; color: #8f98b2; font-size: 12px; line-height: 25px; }
+footer .icon{ color: #fff; font-size: 20px; margin-right: 10px; }
+footer img{ width: 140px; margin-right: 10px; }
+footer .other_links{ display: flex; align-items: center; gap: 15px; }
+
+@media screen and (max-width: 768px) {
+    footer{ min-height: 250px; height: unset; }
+    footer > div{ flex-direction: column; width: 100%; }
+    footer > div > *{ margin-bottom: 20px; width: 100% !important; }
+}

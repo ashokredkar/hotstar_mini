@@ -1,0 +1,17 @@
+// .genres {
+//     display: flex;
+//     gap: 5px;
+//     .genre {
+//         background-color: var(--pink);
+//         padding: 3px 5px;
+//         font-size: 12px;
+//         border-radius: 4px;
+//         color: white;
+//         white-space: nowrap;
+//     }
+// }
+
+.genres{ display: flex; align-items: center; gap: 25px; font-weight: 500; }
+.genres .genre{ position: relative; color: #fff; }
+.genres .genre::after{ content: ""; position: absolute; top: 0; right: -13px; height: 14px; width: 1px; background-color: var(--secondary-text); }
+.genres .genre:last-child:after{ display: none; }
